@@ -9,7 +9,7 @@ class D3SimpleTagCloudChart extends React.Component {
     const data = this.props.data
     let chart = d3.select(this.chartRef)
 
-    let fill = d3.scaleOrdinal(d3.schemeCategory20) // 定义颜色
+    let fill = d3.scaleOrdinal() // 定义颜色
 
     let words = data.map(item => {
       // 处理原始数据

@@ -32,7 +32,7 @@ class D3SimpleForceChart extends React.Component {
       .force('charge', d3.forceManyBody())
       .force('center', d3.forceCenter(width / 2, height / 2))
 
-    let z = d3.scaleOrdinal(d3.schemeCategory20) // 通用线条的颜色
+    let z = d3.scaleOrdinal() // 通用线条的颜色
 
     let link = g
       .append('g') // 画连接线

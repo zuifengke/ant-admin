@@ -29,7 +29,7 @@ class D3SimpleChinaMapChart extends React.Component {
       .geoPath() // 定义路径
       .projection(projection)
 
-    let z = d3.scaleOrdinal(d3.schemeCategory20) // 通用线条的颜色
+    let z = d3.scaleOrdinal() // 通用线条的颜色
 
     let g = chart
       .append('g')

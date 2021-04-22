@@ -14,7 +14,7 @@ class D3VerticalBPChart extends React.Component {
       .attr('width', width + margin.left + margin.right)
       .attr('height', height + margin.top + margin.bottom)
 
-    let z = d3.scaleOrdinal().range(d3.schemeCategory20)
+    let z = d3.scaleOrdinal().range()
 
     const data = this.props.data
 
